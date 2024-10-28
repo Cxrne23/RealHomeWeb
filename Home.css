@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    background-image: url(WILbackground3.JPG);
+    background-repeat: no-repeat;
+    background-size: cover
 }
 
 /* Navigation Bar */
@@ -91,6 +94,21 @@ nav .nav-links a {
 .listing-item:hover {
     background-color: #ccc;
 }
+
+button{
+    
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+
 /* Footer */
 footer {
     background-color: #2c2d47;
@@ -111,14 +129,7 @@ footer .footer-links a {
     font-size: 14px;
 }
 
-footer .social-media a {
-    margin: 0 10px;
-}
 
-footer .social-media img {
-    width: 24px;
-    height: 24px;
-}
 
 footer .placeholder {
     margin-top: 10px;

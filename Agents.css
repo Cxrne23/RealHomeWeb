@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+ 
 }
 
 header {
@@ -75,19 +76,7 @@ header {
   margin: 5px 0;
 }
 
-.social-links {
-  margin-top: 10px;
-}
 
-.social-links a {
-  margin-right: 10px;
-  color: #007bff;
-  text-decoration: none;
-}
-
-.social-links a:hover {
-  text-decoration: underline;
-}
 
 /* About Me Section */
 .about-me {

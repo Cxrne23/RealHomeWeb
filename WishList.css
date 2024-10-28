@@ -3,6 +3,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url(WILbackground4.JPG);
+  background-repeat: no-repeat;
+  background-size: cover
 }
 
 header {
@@ -69,6 +72,7 @@ h2 {
   background-color: #d3d3d3;
   padding: 10px;
   margin-bottom: 10px;
+  
 }
 
 .property-image img {
@@ -123,6 +127,7 @@ h2 {
 
 .empty-favourites p {
   margin-bottom: 10px;
+  color: #d3d3d3;
 }
 
 .browse-btn {

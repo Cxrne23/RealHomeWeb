@@ -1,0 +1,214 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  background-image: url(AboutUsBackground.webp);
+  background-repeat: no-repeat;
+    background-size: cover
+}
+header {
+  background-color: #2f2f48;
+  color: white;
+  padding: 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #eef;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  color:#fff;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 1.2em;
+  color:#fff;
+  margin-bottom: 40px;
+}
+
+/* Mission & Vision */
+.mission-vision h2 {
+  font-size: 1.8em;
+  color:#fff;
+  margin: 20px 0;
+}
+
+.mission-vision p {
+  font-size: 1em;
+  color:#fff;
+  margin: 10px 0 30px;
+}
+
+/* Core Values */
+.values h2 {
+  font-size: 1.8em;
+  color:#fff;
+  margin-bottom: 20px;
+}
+
+.values ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.values li {
+  font-size: 1.1em;
+  color:#fff;
+  background-color:#333;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Team Section */
+.team {
+  margin-top: 40px;
+}
+
+.team h2 {
+  font-size: 1.8em;
+  color:#fff;
+  margin-bottom: 30px;
+}
+
+.team-member {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 1.1em;
+  color:#fff;
+}
+
+.team-member p {
+  font-size: 0.9em;
+  color:#fff;
+}
+
+/* Testimonials */
+.testimonials {
+  margin-top: 40px;
+}
+
+.testimonials h2 {
+  font-size: 1.8em;
+  color:#fff;
+  margin-bottom: 20px;
+}
+
+.testimonials blockquote {
+  font-size: 1.1em;
+  color:#fff;
+  margin: 15px 0;
+  font-style: italic;
+}
+
+/* Contact CTA */
+.contact-cta {
+  margin-top: 50px;
+  background-color: #0044cc;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-cta h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.cta-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0066ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #0055dd;
+}
+
+footer {
+  background-color: #2f2f48;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer nav ul li a:hover {
+  text-decoration: underline;
+}
