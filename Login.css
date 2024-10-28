@@ -12,6 +12,8 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url("./WILLoginBack.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Container */
