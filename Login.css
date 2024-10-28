@@ -1,0 +1,132 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./WILLoginBack.JPG");
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Form Container */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* Form Styles */
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #2c2d47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(0, 195, 249);
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.toggle-buttons button.active {
+    background-color: rgb(0, 191, 249);
+    color: white;
+}
+
+.toggle-link {
+    color: #2c2d47;
+    cursor: pointer;
+}
+
+.toggle-link:hover {
+    color: rgb(0, 191, 249);
+}
+
+p {
+    font-size: 14px;
+    color: #777;
+}
+.return-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.return-home a {
+    text-decoration: none;
+    color: #2c2d47;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;  /* Smooth transition on hover */
+}
+
+.return-home a:hover {
+    color: rgb(249, 137, 0);  
+}
+/* Login.css */
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.toggle-buttons button.active {
+    font-weight: bold;
+    color: #000;
+}
