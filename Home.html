@@ -1,3 +1,14 @@
+<?php
+ob_start(); // Start output buffering
+session_start(); // Start the session
+
+// Check if the user is logged in; if not, redirect to the login page
+if (!isset($_SESSION['user_id'])) {
+    header("Location:login.php"); // Redirect to login page
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,20 +16,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RealHome</title>
     <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="header-footer.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">RealHome</div>
-        <ul class="nav-links">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Listings.html">Listings</a></li>
-            <li><a href="Agents.html">Agents</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Login.html">Login/Sign in</a></li>
-        </ul>
-    </nav>
-
+    <header>
+        <div class="navbar">
+            <h1 class="logo">RealHome</h1>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Listings.html">Listings</a></li>
+                    <li><a href="Agents.html">Agents</a></li>
+                    <li><a href="WishList.html">WishList</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="Login.html">Login</a></li> <!-- New Login Link -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
     <!-- Main Content -->
     <div class="main-content">
         <div class="search-section">
@@ -31,40 +48,50 @@
             </div>
         </div>
 
-        <!-- Featured Listings -->
-        <div class="featured-listings">
-            <h3>Featured Listings</h3>
-            <div class="listings-grid">
-                <div class="image-placeholder">
-                    <img src="./Home.WIL1.webp"/>
-                    <button>Property Details</button>
-                </div>
-                <div class="image-placeholder">
-                    <img src="./Home.WIL2.webp"/>
-                    <button>Property Details</button>
-                </div>
-                <div class="image-placeholder">
-                    <img src="./Home.WIL3.webp"/>
-                    <button>Property Details</button>
-                </div>
-                <div class="image-placeholder">
-                    <img src="./Home.WIL4.webp"/>
-                    <button>Property Details</button>
-                    
-                </div>
-            </div>
+      <!-- Featured Listings -->
+<div class="featured-listings">
+    <h3>Featured Listings</h3>
+    <div class="listings-grid">
+        <div class="image-placeholder">
+            <img src="./Home.WIL1.webp" alt="Location1 Price1 Type1"/>
+            <a href="property1.php">
+                <button>Property Details</button>
+            </a>
+        </div>
+        <div class="image-placeholder">
+            <img src="./Home.WIL2.webp" alt="Location2 Price2 Type2"/>
+            <a href="property2.php">
+                <button>Property Details</button>
+            </a>
+        </div>
+        <div class="image-placeholder">
+            <img src="./Home.WIL3.webp" alt="Location3 Price3 Type3"/>
+            <a href="property3.php">
+                <button>Property Details</button>
+            </a>
+        </div>
+        <div class="image-placeholder">
+            <img src="./Home.WIL4.webp" alt="Location4 Price4 Type4"/>
+            <a href="property4.php">
+                <button>Property Details</button>
+            </a>
         </div>
     </div>
+</div>
+
 
     <!-- Footer -->
     <footer>
-        <div class="footer-links">
-            <a href="AboutUs.html">About Us</a>
-            <a href="Contact.html">Contact</a>
-            <a href="PrivacyPolicy.html">Privacy Policy</a>
-        </div>
-        
-        <div class="placeholder">Place Holder Details</div>
+        <p>2024 RealHome. All Rights Reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

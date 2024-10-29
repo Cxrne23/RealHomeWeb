@@ -6,37 +6,7 @@ body {
  
 }
 
-header {
-  background-color: #2f2f48;
-  color: white;
-  padding: 20px;
-}
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar ul li {
-  display: inline;
-}
-
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
 
 /* Agent Info Section */
 .agent-info {
@@ -165,32 +135,3 @@ header {
   background-color: #0056b3;
 }
 
-/* Footer */
-footer {
-  background-color: #2f2f48;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-footer p {
-  margin: 0;
-}
-
-footer nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-footer nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-footer nav ul li a:hover {
-  text-decoration: underline;
-}
