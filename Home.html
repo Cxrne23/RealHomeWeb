@@ -4,7 +4,7 @@ session_start(); // Start the session
 
 // Check if the user is logged in; if not, redirect to the login page
 if (!isset($_SESSION['user_id'])) {
-    header("Location:login.php"); // Redirect to login page
+    header("Location: login.php"); // Redirect to login page
     exit();
 }
 ?>
@@ -48,39 +48,29 @@ if (!isset($_SESSION['user_id'])) {
             </div>
         </div>
 
-      <!-- Featured Listings -->
+       <!-- Featured Listings -->
 <div class="featured-listings">
     <h3>Featured Listings</h3>
     <div class="listings-grid">
         <div class="image-placeholder">
-            <img src="./Home.WIL1.webp" alt="Location1 Price1 Type1"/>
-            <a href="property1.php">
-                <button>Property Details</button>
-            </a>
+            <img src="./Home.WIL1.webp" alt="3-Bedroom Modern House in Roodepoort, R1,500,000">
+            <a href="property-details5.html" target="_blank"><button>Property Details</button></a>
         </div>
         <div class="image-placeholder">
-            <img src="./Home.WIL2.webp" alt="Location2 Price2 Type2"/>
-            <a href="property2.php">
-                <button>Property Details</button>
-            </a>
+            <img src="./Home.WIL2.webp" alt="Luxury Condo in Sandton, R2,200,000">
+            <a href="property-details6.html" target="_blank"><button>Property Details</button></a>
         </div>
         <div class="image-placeholder">
-            <img src="./Home.WIL3.webp" alt="Location3 Price3 Type3"/>
-            <a href="property3.php">
-                <button>Property Details</button>
-            </a>
+            <img src="./Home.WIL3.webp" alt="Penthouse with City View in Cape Town, R3,800,000">
+            <a href="property-details7.html" target="_blank"><button>Property Details</button></a>
         </div>
         <div class="image-placeholder">
-            <img src="./Home.WIL4.webp" alt="Location4 Price4 Type4"/>
-            <a href="property4.php">
-                <button>Property Details</button>
-            </a>
+            <img src="./Home.WIL4.webp" alt="Beachfront Villa in Durban, R4,500,000">
+            <a href="property-details8.html" target="_blank"><button>Property Details</button></a>
         </div>
     </div>
 </div>
 
-
-    <!-- Footer -->
     <footer>
         <p>2024 RealHome. All Rights Reserved.</p>
         <nav>
